@@ -4736,3 +4736,675 @@ Served asset /application.js - 304 Not Modified (0ms)
 
 Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-06-11 19:01:09 -0500
 Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-06-11 19:54:36 -0500
+Connecting to database specified by database.yml
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (2.4ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mVerseCompletion Load (0.1ms)[0m  SELECT "verse_completions".* FROM "verse_completions" WHERE "verse_completions"."user_id" = 1
+  [1m[36mVerse Load (0.1ms)[0m  [1mSELECT "verses".* FROM "verses" WHERE "verses"."user_id" = 1[0m
+  [1m[35mVerse Load (0.1ms)[0m  SELECT "verses".* FROM "verses" WHERE "verses"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "verses".* FROM "verses" WHERE "verses"."id" = 1 LIMIT 1[0m
+  Rendered users/index.html.erb within layouts/application (100.4ms)
+Completed 200 OK in 119ms (Views: 113.3ms | ActiveRecord: 5.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-06-11 19:54:37 -0500
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-06-11 19:54:37 -0500
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-06-11 19:54:37 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-06-11 19:54:37 -0500
+Served asset /application.js - 304 Not Modified (3ms)
+
+
+Started GET "/type/1" for 127.0.0.1 at 2013-06-11 20:00:25 -0500
+Processing by VersesController#type as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mVerse Load (0.2ms)[0m  SELECT "verses".* FROM "verses" WHERE "verses"."id" = ? LIMIT 1  [["id", "1"]]
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+Compiled typer_engine.js  (222ms)  (pid 891)
+  Rendered verses/type.html.erb within layouts/application (247.3ms)
+Completed 200 OK in 253ms (Views: 251.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-06-11 20:00:25 -0500
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-06-11 20:00:25 -0500
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/typer_engine.js?body=1" for 127.0.0.1 at 2013-06-11 20:00:25 -0500
+Served asset /typer_engine.js - 200 OK (1ms)
+
+
+Started GET "/assets/typer_engine.css?body=1" for 127.0.0.1 at 2013-06-11 20:00:25 -0500
+Served asset /typer_engine.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-06-11 20:00:25 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-06-11 20:00:25 -0500
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/type/1" for 127.0.0.1 at 2013-06-11 20:00:38 -0500
+Processing by VersesController#type as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mVerse Load (0.2ms)[0m  SELECT "verses".* FROM "verses" WHERE "verses"."id" = ? LIMIT 1  [["id", "1"]]
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered verses/type.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 7ms (Views: 5.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-06-11 20:00:38 -0500
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-06-11 20:00:38 -0500
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-06-11 20:00:38 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/typer_engine.js?body=1" for 127.0.0.1 at 2013-06-11 20:00:38 -0500
+Served asset /typer_engine.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/typer_engine.css?body=1" for 127.0.0.1 at 2013-06-11 20:00:38 -0500
+Served asset /typer_engine.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-06-11 20:00:38 -0500
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started POST "/verse_completions" for 127.0.0.1 at 2013-06-11 20:00:47 -0500
+Processing by VerseCompletionsController#create as */*
+  Parameters: {"verse_completion"=>{"wpm"=>"80", "verse_id"=>"1", "user_id"=>"1"}}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (2.9ms)[0m  [1mINSERT INTO "verse_completions" ("created_at", "updated_at", "user_id", "verse_id", "wpm") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Wed, 12 Jun 2013 01:00:47 UTC +00:00], ["updated_at", Wed, 12 Jun 2013 01:00:47 UTC +00:00], ["user_id", 1], ["verse_id", 1], ["wpm", 80]]
+  [1m[35m (4.0ms)[0m  commit transaction
+Completed 200 OK in 11ms (Views: 0.2ms | ActiveRecord: 7.0ms)
+
+
+Started GET "/type/1" for 127.0.0.1 at 2013-06-11 20:01:41 -0500
+Processing by VersesController#type as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mVerse Load (0.2ms)[0m  [1mSELECT "verses".* FROM "verses" WHERE "verses"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+Compiled typer_engine.js  (250ms)  (pid 891)
+  Rendered verses/type.html.erb within layouts/application (290.4ms)
+Completed 200 OK in 297ms (Views: 295.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/typer_engine.js?body=1" for 127.0.0.1 at 2013-06-11 20:01:41 -0500
+Served asset /typer_engine.js - 200 OK (7ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-06-11 20:01:41 -0500
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-06-11 20:01:41 -0500
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-06-11 20:01:41 -0500
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-06-11 20:01:41 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/typer_engine.css?body=1" for 127.0.0.1 at 2013-06-11 20:01:41 -0500
+Served asset /typer_engine.css - 304 Not Modified (0ms)
+
+
+Started GET "/type/1" for 127.0.0.1 at 2013-06-11 20:01:53 -0500
+Processing by VersesController#type as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mVerse Load (0.1ms)[0m  [1mSELECT "verses".* FROM "verses" WHERE "verses"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered verses/type.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 5ms (Views: 3.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-06-11 20:01:53 -0500
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-06-11 20:01:53 -0500
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-06-11 20:01:53 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/typer_engine.js?body=1" for 127.0.0.1 at 2013-06-11 20:01:53 -0500
+Served asset /typer_engine.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/typer_engine.css?body=1" for 127.0.0.1 at 2013-06-11 20:01:53 -0500
+Served asset /typer_engine.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-06-11 20:01:53 -0500
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/type/1" for 127.0.0.1 at 2013-06-11 20:02:05 -0500
+Processing by VersesController#type as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mVerse Load (0.1ms)[0m  [1mSELECT "verses".* FROM "verses" WHERE "verses"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered verses/type.html.erb within layouts/application (17.3ms)
+Completed 200 OK in 20ms (Views: 19.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-06-11 20:02:05 -0500
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-06-11 20:02:05 -0500
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-06-11 20:02:05 -0500
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-06-11 20:02:05 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/typer_engine.js?body=1" for 127.0.0.1 at 2013-06-11 20:02:05 -0500
+Served asset /typer_engine.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/typer_engine.css?body=1" for 127.0.0.1 at 2013-06-11 20:02:05 -0500
+Served asset /typer_engine.css - 304 Not Modified (0ms)
+
+
+Started GET "/type/1" for 127.0.0.1 at 2013-06-11 20:02:15 -0500
+Processing by VersesController#type as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mVerse Load (0.1ms)[0m  [1mSELECT "verses".* FROM "verses" WHERE "verses"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered verses/type.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 6ms (Views: 5.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-06-11 20:02:15 -0500
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/typer_engine.js?body=1" for 127.0.0.1 at 2013-06-11 20:02:15 -0500
+Served asset /typer_engine.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-06-11 20:02:15 -0500
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-06-11 20:02:15 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-06-11 20:02:15 -0500
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/typer_engine.css?body=1" for 127.0.0.1 at 2013-06-11 20:02:15 -0500
+Served asset /typer_engine.css - 304 Not Modified (0ms)
+
+
+Started POST "/verse_completions" for 127.0.0.1 at 2013-06-11 20:02:26 -0500
+Processing by VerseCompletionsController#create as */*
+  Parameters: {"verse_completion"=>{"wpm"=>"62", "verse_id"=>"1", "user_id"=>"1"}}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.7ms)[0m  INSERT INTO "verse_completions" ("created_at", "updated_at", "user_id", "verse_id", "wpm") VALUES (?, ?, ?, ?, ?)  [["created_at", Wed, 12 Jun 2013 01:02:26 UTC +00:00], ["updated_at", Wed, 12 Jun 2013 01:02:26 UTC +00:00], ["user_id", 1], ["verse_id", 1], ["wpm", 62]]
+  [1m[36m (2.2ms)[0m  [1mcommit transaction[0m
+Completed 200 OK in 5ms (Views: 0.1ms | ActiveRecord: 2.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-06-11 20:02:29 -0500
+Processing by UsersController#index as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mVerseCompletion Load (0.3ms)[0m  [1mSELECT "verse_completions".* FROM "verse_completions" WHERE "verse_completions"."user_id" = 1[0m
+  [1m[35mVerse Load (0.2ms)[0m  SELECT "verses".* FROM "verses" WHERE "verses"."user_id" = 1
+  [1m[36mVerse Load (0.2ms)[0m  [1mSELECT "verses".* FROM "verses" WHERE "verses"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "verses".* FROM "verses" WHERE "verses"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "verses".* FROM "verses" WHERE "verses"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "verses".* FROM "verses" WHERE "verses"."id" = 1 LIMIT 1
+  Rendered users/index.html.erb within layouts/application (26.3ms)
+Completed 200 OK in 31ms (Views: 29.8ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-06-11 20:02:29 -0500
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-06-11 20:02:29 -0500
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-06-11 20:02:29 -0500
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-06-11 20:02:29 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-06-11 20:03:11 -0500
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mVerseCompletion Load (0.2ms)[0m  SELECT "verse_completions".* FROM "verse_completions" WHERE "verse_completions"."user_id" = 1
+  [1m[36mVerse Load (0.1ms)[0m  [1mSELECT "verses".* FROM "verses" WHERE "verses"."user_id" = 1[0m
+  [1m[35mVerse Load (0.2ms)[0m  SELECT "verses".* FROM "verses" WHERE "verses"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "verses".* FROM "verses" WHERE "verses"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "verses".* FROM "verses" WHERE "verses"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "verses".* FROM "verses" WHERE "verses"."id" = 1 LIMIT 1[0m
+  Rendered users/index.html.erb within layouts/application (8.8ms)
+Completed 200 OK in 13ms (Views: 12.2ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-06-11 20:03:11 -0500
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-06-11 20:03:11 -0500
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-06-11 20:03:11 -0500
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-06-11 20:03:11 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-06-11 20:03:19 -0500
+Processing by UsersController#index as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mVerseCompletion Load (0.2ms)[0m  [1mSELECT "verse_completions".* FROM "verse_completions" WHERE "verse_completions"."user_id" = 1[0m
+  [1m[35mVerse Load (0.1ms)[0m  SELECT "verses".* FROM "verses" WHERE "verses"."user_id" = 1
+  [1m[36mVerse Load (0.1ms)[0m  [1mSELECT "verses".* FROM "verses" WHERE "verses"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "verses".* FROM "verses" WHERE "verses"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "verses".* FROM "verses" WHERE "verses"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "verses".* FROM "verses" WHERE "verses"."id" = 1 LIMIT 1
+  Rendered users/index.html.erb within layouts/application (9.0ms)
+Completed 200 OK in 13ms (Views: 12.6ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-06-11 20:03:19 -0500
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-06-11 20:03:19 -0500
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-06-11 20:03:19 -0500
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-06-11 20:03:19 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-06-11 20:03:32 -0500
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mVerseCompletion Load (0.1ms)[0m  SELECT "verse_completions".* FROM "verse_completions" WHERE "verse_completions"."user_id" = 1
+  [1m[36mVerse Load (0.1ms)[0m  [1mSELECT "verses".* FROM "verses" WHERE "verses"."user_id" = 1[0m
+  [1m[35mVerse Load (0.1ms)[0m  SELECT "verses".* FROM "verses" WHERE "verses"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "verses".* FROM "verses" WHERE "verses"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "verses".* FROM "verses" WHERE "verses"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "verses".* FROM "verses" WHERE "verses"."id" = 1 LIMIT 1[0m
+  Rendered users/index.html.erb within layouts/application (5.3ms)
+Completed 200 OK in 8ms (Views: 7.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-06-11 20:03:32 -0500
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-06-11 20:03:32 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-06-11 20:03:32 -0500
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-06-11 20:03:32 -0500
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-06-11 20:03:56 -0500
+Processing by UsersController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mVerseCompletion Load (0.2ms)[0m  [1mSELECT "verse_completions".* FROM "verse_completions" WHERE "verse_completions"."user_id" = 1[0m
+  [1m[35mVerse Load (0.2ms)[0m  SELECT "verses".* FROM "verses" WHERE "verses"."user_id" = 1
+  [1m[36mVerse Load (0.2ms)[0m  [1mSELECT "verses".* FROM "verses" WHERE "verses"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "verses".* FROM "verses" WHERE "verses"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "verses".* FROM "verses" WHERE "verses"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "verses".* FROM "verses" WHERE "verses"."id" = 1 LIMIT 1
+  Rendered users/index.html.erb within layouts/application (9.6ms)
+Completed 200 OK in 14ms (Views: 12.9ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-06-11 20:03:56 -0500
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-06-11 20:03:56 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-06-11 20:03:56 -0500
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-06-11 20:03:56 -0500
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-06-11 20:04:04 -0500
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mVerseCompletion Load (0.1ms)[0m  SELECT "verse_completions".* FROM "verse_completions" WHERE "verse_completions"."user_id" = 1
+  [1m[36mVerse Load (0.2ms)[0m  [1mSELECT "verses".* FROM "verses" WHERE "verses"."user_id" = 1[0m
+  [1m[35mVerse Load (0.1ms)[0m  SELECT "verses".* FROM "verses" WHERE "verses"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "verses".* FROM "verses" WHERE "verses"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "verses".* FROM "verses" WHERE "verses"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "verses".* FROM "verses" WHERE "verses"."id" = 1 LIMIT 1[0m
+  Rendered users/index.html.erb within layouts/application (6.0ms)
+Completed 200 OK in 9ms (Views: 7.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-06-11 20:04:04 -0500
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-06-11 20:04:04 -0500
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-06-11 20:04:05 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-06-11 20:04:05 -0500
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/verses/new" for 127.0.0.1 at 2013-06-11 20:04:09 -0500
+Processing by VersesController#new as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered verses/new.html.erb within layouts/application (16.1ms)
+Completed 200 OK in 21ms (Views: 19.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-06-11 20:04:09 -0500
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-06-11 20:04:09 -0500
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-06-11 20:04:09 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-06-11 20:04:09 -0500
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started POST "/verses" for 127.0.0.1 at 2013-06-11 20:04:43 -0500
+Processing by VersesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Ug3mtjrsmELW5fmCqeE+fqD+6zQfzdi+J/WIIdDqBCE=", "verse"=>{"ref"=>"Psalm 111:10", "content"=>"The fear of the LORD is the beginning of wisdom. All those who practice it have a good understanding. His praise endures forever.", "user_id"=>"1"}, "commit"=>"Create Verse"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "verses" ("content", "created_at", "ref", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?)  [["content", "The fear of the LORD is the beginning of wisdom. All those who practice it have a good understanding. His praise endures forever."], ["created_at", Wed, 12 Jun 2013 01:04:43 UTC +00:00], ["ref", "Psalm 111:10"], ["updated_at", Wed, 12 Jun 2013 01:04:43 UTC +00:00], ["user_id", 1]]
+  [1m[36m (1.9ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 6ms (ActiveRecord: 2.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-06-11 20:04:43 -0500
+Processing by UsersController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mVerseCompletion Load (0.2ms)[0m  [1mSELECT "verse_completions".* FROM "verse_completions" WHERE "verse_completions"."user_id" = 1[0m
+  [1m[35mVerse Load (0.2ms)[0m  SELECT "verses".* FROM "verses" WHERE "verses"."user_id" = 1
+  [1m[36mVerse Load (0.1ms)[0m  [1mSELECT "verses".* FROM "verses" WHERE "verses"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "verses".* FROM "verses" WHERE "verses"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "verses".* FROM "verses" WHERE "verses"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "verses".* FROM "verses" WHERE "verses"."id" = 1 LIMIT 1
+  Rendered users/index.html.erb within layouts/application (7.4ms)
+Completed 200 OK in 11ms (Views: 10.1ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-06-11 20:04:43 -0500
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-06-11 20:04:43 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-06-11 20:04:43 -0500
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-06-11 20:04:43 -0500
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-06-11 20:04:45 -0500
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mVerseCompletion Load (0.2ms)[0m  SELECT "verse_completions".* FROM "verse_completions" WHERE "verse_completions"."user_id" = 1
+  [1m[36mVerse Load (0.1ms)[0m  [1mSELECT "verses".* FROM "verses" WHERE "verses"."user_id" = 1[0m
+  [1m[35mVerse Load (0.1ms)[0m  SELECT "verses".* FROM "verses" WHERE "verses"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "verses".* FROM "verses" WHERE "verses"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "verses".* FROM "verses" WHERE "verses"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "verses".* FROM "verses" WHERE "verses"."id" = 1 LIMIT 1[0m
+  Rendered users/index.html.erb within layouts/application (5.5ms)
+Completed 200 OK in 8ms (Views: 7.5ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-06-11 20:04:45 -0500
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-06-11 20:04:45 -0500
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-06-11 20:04:45 -0500
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-06-11 20:04:45 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/type/1" for 127.0.0.1 at 2013-06-11 20:04:55 -0500
+Processing by VersesController#type as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mVerse Load (0.1ms)[0m  SELECT "verses".* FROM "verses" WHERE "verses"."id" = ? LIMIT 1  [["id", "1"]]
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered verses/type.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 6ms (Views: 5.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-06-11 20:04:55 -0500
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/typer_engine.css?body=1" for 127.0.0.1 at 2013-06-11 20:04:55 -0500
+Served asset /typer_engine.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-06-11 20:04:55 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-06-11 20:04:55 -0500
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/typer_engine.js?body=1" for 127.0.0.1 at 2013-06-11 20:04:55 -0500
+Served asset /typer_engine.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-06-11 20:04:55 -0500
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started POST "/verse_completions" for 127.0.0.1 at 2013-06-11 20:05:05 -0500
+Processing by VerseCompletionsController#create as */*
+  Parameters: {"verse_completion"=>{"wpm"=>"68", "verse_id"=>"1", "user_id"=>"1"}}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "verse_completions" ("created_at", "updated_at", "user_id", "verse_id", "wpm") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Wed, 12 Jun 2013 01:05:05 UTC +00:00], ["updated_at", Wed, 12 Jun 2013 01:05:05 UTC +00:00], ["user_id", 1], ["verse_id", 1], ["wpm", 68]]
+  [1m[35m (2.1ms)[0m  commit transaction
+Completed 200 OK in 4ms (Views: 0.1ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-06-11 20:05:14 -0500
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mVerseCompletion Load (0.4ms)[0m  SELECT "verse_completions".* FROM "verse_completions" WHERE "verse_completions"."user_id" = 1
+  [1m[36mVerse Load (0.2ms)[0m  [1mSELECT "verses".* FROM "verses" WHERE "verses"."user_id" = 1[0m
+  [1m[35mVerse Load (0.2ms)[0m  SELECT "verses".* FROM "verses" WHERE "verses"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "verses".* FROM "verses" WHERE "verses"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "verses".* FROM "verses" WHERE "verses"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "verses".* FROM "verses" WHERE "verses"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "verses".* FROM "verses" WHERE "verses"."id" = 1 LIMIT 1
+  Rendered users/index.html.erb within layouts/application (8.9ms)
+Completed 200 OK in 13ms (Views: 11.7ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-06-11 20:05:15 -0500
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-06-11 20:05:15 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-06-11 20:05:15 -0500
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-06-11 20:05:15 -0500
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/log_out" for 127.0.0.1 at 2013-06-11 20:05:34 -0500
+Processing by SessionsController#destroy as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-06-11 20:05:34 -0500
+Processing by UsersController#index as HTML
+  Rendered users/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 3ms (Views: 3.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-06-11 20:05:34 -0500
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-06-11 20:05:34 -0500
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-06-11 20:05:34 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-06-11 20:05:34 -0500
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/log_in" for 127.0.0.1 at 2013-06-11 20:05:35 -0500
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 5ms (Views: 5.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-06-11 20:05:35 -0500
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-06-11 20:05:35 -0500
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-06-11 20:05:35 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-06-11 20:05:35 -0500
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started POST "/sessions" for 127.0.0.1 at 2013-06-11 20:05:38 -0500
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Ug3mtjrsmELW5fmCqeE+fqD+6zQfzdi+J/WIIdDqBCE=", "login"=>"joahg", "password"=>"[FILTERED]", "commit"=>"Log in"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."email" = 'joahg' LIMIT 1[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."login" = 'joahg' LIMIT 1
+Redirected to http://localhost:3000/
+Completed 302 Found in 76ms (ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-06-11 20:05:39 -0500
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mVerseCompletion Load (0.2ms)[0m  SELECT "verse_completions".* FROM "verse_completions" WHERE "verse_completions"."user_id" = 1
+  [1m[36mVerse Load (0.1ms)[0m  [1mSELECT "verses".* FROM "verses" WHERE "verses"."user_id" = 1[0m
+  [1m[35mVerse Load (0.1ms)[0m  SELECT "verses".* FROM "verses" WHERE "verses"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "verses".* FROM "verses" WHERE "verses"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "verses".* FROM "verses" WHERE "verses"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "verses".* FROM "verses" WHERE "verses"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "verses".* FROM "verses" WHERE "verses"."id" = 1 LIMIT 1
+  Rendered users/index.html.erb within layouts/application (5.7ms)
+Completed 200 OK in 8ms (Views: 7.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-06-11 20:05:39 -0500
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-06-11 20:05:39 -0500
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-06-11 20:05:39 -0500
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-06-11 20:05:39 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)

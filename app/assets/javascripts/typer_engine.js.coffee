@@ -53,13 +53,19 @@ $ ->
 		$(".wpm").text "Your average wpm is #{averageWPM()}"
 		$(".incorrectchars").text "You have a(n) #{Math.floor(100*(incorrectchars/unsplit.length))}% error rate"
 		typing = false
-		$.ajax "/verse_completions",
-		    type: "POST"
-		    data: 
-		    	verse_completion:
-		             wpm: averageWPM()
-		             verse_id: vid
-		             user_id: uid
+		$("body").append("<span class='verse_msg'></span><br><a href='/'>Go Home</a> or <a href='#{window.location}'>Type this verse again</a>")
+		if incorrectchars == 0
+			$.ajax "/verse_completions",
+			    type: "POST"
+			    data: 
+			    	verse_completion:
+			             wpm: averageWPM()
+			             verse_id: vid
+			             user_id: uid
+			    success: ->
+			    	$(".verse_msg").append("<br>Your WPM for this verse was added to your average.")
+		else
+			$(".verse_msg").append("<br>You will need to complete the verse with no errors to pass off on it.")
 
 	keypress = (e) ->
 		char = String.fromCharCode(e.keyCode)
