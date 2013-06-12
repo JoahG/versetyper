@@ -54,11 +54,12 @@ $ ->
 		clearInterval wordTimer
 		wordTimer = null
 		currentTime = 0
-		$(".wpm").text "Your average wpm is #{averageWPM()}"
-		$(".incorrectchars").text "You have a(n) #{Math.floor(100*(incorrectchars/unsplit.length))}% error rate"
+		$(".wpm").text "Your average wpm was #{averageWPM()}"
+		if !master
+			$(".incorrectchars").text "You have a(n) #{Math.floor(100*(incorrectchars/unsplit.length))}% error rate"
 		typing = false
 		$("body").append("<span class='verse_msg'></span><br><a href='/'>Go Home</a> or <a href='#{window.location}'>Type this verse again</a>")
-		if incorrectchars == 0
+		if (!master and incorrectchars == 0) or (master and averageWPM() > master_val)
 			$.ajax "/verse_completions",
 			    type: "POST"
 			    data: 
@@ -66,8 +67,14 @@ $ ->
 			             wpm: averageWPM()
 			             verse_id: vid
 			             user_id: uid
+			             master: true
 			    success: ->
-			    	$(".verse_msg").append("<br>Your WPM for this verse was added to your average.")
+			    	if master
+			    		$(".verse_msg").append("<br>You have passed off on this verse.")
+			    	else
+				    	$(".verse_msg").append("<br>Your WPM for this verse was added to your average.")
+		else if master and averageWPM() < master_val
+			$(".verse_msg").append("<br>To master this verse, you will need a WPM of over #{master_val}")
 		else
 			$(".verse_msg").append("<br>You will need to complete the verse with no errors to pass off on it.")
 
@@ -92,7 +99,7 @@ $ ->
 				charsTyped = 0
 				resetTimer()
 				$(".wpm").text "#{Math.floor(6000/times[times.length-1])} wpm"
-		else
+		else if !master
 			if typing and char.toLowerCase() != $(".word:not(.typed) .char:not(.typed)").first().text().toLowerCase()
 				incorrectchars += 1
 				$(".incorrectchars").text("#{incorrectchars} incorrect characters typed")

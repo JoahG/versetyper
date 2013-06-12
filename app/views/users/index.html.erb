@@ -1,15 +1,17 @@
 <% if current_user %>
 	Currently logged in as <%= current_user.login %>. <%= link_to "Log Out?", log_out_path %><br>
-	You have an Average WPM of <%= current_user.wpm %>. <br><br>
+	You have an Average WPM of <%= current_user.wpm %>. <br>
+	You have mastered <%= pluralize(current_user.mastered_verses.count, "verse") %> <br>
+	You have <%= pluralize(current_user.verse_completions.count, "successful verse completion") %><br><br>
 	<%= link_to "New Verse", new_verse_path %>
 	<ul>
 		<% current_user.verses.each do |verse| %>
-			<li><%= link_to verse.ref, type_path(verse) %></li>
+			<li><%= verse.ref %> - <%= link_to "Practice Verse", type_path(verse) %> | <%= link_to "Master Verse", master_path(verse) %></li>
 		<% end %>
 	</ul>
 	<ul>
 		<% current_user.verse_completions.each do |vc| %>
-			<li><%= vc.verse.ref %> - <%= vc.wpm %> wpm</li>
+			<li><%= vc.verse.ref %> - <%= vc.wpm %> wpm <%= " => Master" if vc.master %></li>
 		<% end %>
 	</ul>
 <%else%>

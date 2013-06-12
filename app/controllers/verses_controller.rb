@@ -15,4 +15,8 @@ class VersesController < ApplicationController
   def type
   	@verse = Verse.find(params[:id])
   end
+
+  def master
+    @verse = Verse.find(params[:id])
+  end
 end
