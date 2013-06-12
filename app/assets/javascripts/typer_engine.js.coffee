@@ -7,6 +7,7 @@ $ ->
 	charsTyped = null
 	times = null
 	incorrectchars = null
+	alphabet = ["a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z"," "]
 
 	setup = (w) ->	
 		unsplit = w
@@ -23,7 +24,10 @@ $ ->
 		for word in text
 			html += "<p class='word'>"
 			for character in word
-				html += "<span class='char'>#{character}</span>"
+				if character.toLowerCase() in alphabet
+					html += "<span class='char'>#{character}</span>"
+				else
+					html += "#{character}"
 			html += "</p>"
 			if word != text[text.length-1]
 				html += "<p class='word'><span class='char'> </span></p>"
@@ -69,6 +73,9 @@ $ ->
 
 	keypress = (e) ->
 		char = String.fromCharCode(e.keyCode)
+
+		if char.toLowerCase() not in alphabet
+			return
 
 		if char == " "
 			e.preventDefault()

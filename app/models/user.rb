@@ -12,6 +12,10 @@ class User < ActiveRecord::Base
 			t += vc.wpm
 			p += 1
 		end
-		t/p
+		if p > 0
+			t/p
+		else
+			t
+		end
 	end
 end
