@@ -1,5 +1,9 @@
-p.word:not(.typed) {
-	color: white;
+.verse.type p.word:not(.typed) {
+	color: #ddd
+}
+
+.verse.master p.word:not(.typed) {
+	color: #fff
 }
 
 p.word {
