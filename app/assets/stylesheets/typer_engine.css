@@ -1,8 +1,8 @@
-.verse.type p.word:not(.typed) {
+.typeable.type p.word:not(.typed) {
 	color: #ddd
 }
 
-.verse.master p.word:not(.typed) {
+.typeable.master p.word:not(.typed) {
 	color: #fff
 }
 
