@@ -20,7 +20,7 @@ Versetyper::Application.configure do
   # Generate digests for assets URLs
   config.assets.digest = true
 
-  config.assets.precompile += %w( typer_engine.js.coffee )
+  config.assets.precompile += %w( typer_engine.js )
   config.assets.precompile += %w( typer_engine.css )
 
   # Defaults to nil and saved in location specified by config.assets.prefix
