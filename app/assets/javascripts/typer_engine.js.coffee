@@ -22,7 +22,7 @@ $ ->
 		charsTyped = 0
 		times = []
 		incorrectchars = 0
-		$("body").html "<div class='typeable " + (master ? "master" : "type") + "'></div><span class='wpm'> 0 wpm </span><span class='wordTimer'></span><br><span class='incorrectchars'></span>"
+		$("body").html "<div class='typeable " + (if master then "master" else "type") + "'></div><span class='wpm'> 0 wpm </span><span class='wordTimer'></span><br><span class='incorrectchars'></span>"
 		for word in text
 			html += "<p class='word'>"
 			for character in word
