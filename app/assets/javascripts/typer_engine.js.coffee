@@ -1,4 +1,4 @@
-$ ->
+$(document).ready ->
 	unsplit = null
 	typing = null
 	currentTime = null
@@ -7,8 +7,8 @@ $ ->
 	charsTyped = null
 	times = null
 	incorrectchars = null
-	if !master?
-		master = false
+	if !master
+		master = $("#typer_engine_container").hasClass("master")
 	alphabet = ["a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z"," "]
 
 	setup = (w) ->	
@@ -22,7 +22,7 @@ $ ->
 		charsTyped = 0
 		times = []
 		incorrectchars = 0
-		$("body").html "<div class='typeable " + (if master then "master" else "type") + "'></div><span class='wpm'> 0 wpm </span><span class='wordTimer'></span><br><span class='incorrectchars'></span>"
+		$("#typer_engine_container").html "<div class='typeable " + (if master then "master" else "type") + "'></div><span class='wpm'> 0 wpm </span><span class='wordTimer'></span><br><span class='incorrectchars'></span>"
 		for word in text
 			html += "<p class='word'>"
 			for character in word
@@ -36,6 +36,7 @@ $ ->
 
 		$(".typeable").html html
 		$(document).keypress (e) -> keypress(e)
+		$(document).keydown (e) -> chromeBackFix(e)
 
 	averageWPM = ->
 		t = 0
@@ -60,7 +61,7 @@ $ ->
 		if !master
 			$(".incorrectchars").text "You have a(n) #{Math.floor(100*(incorrectchars/unsplit.length))}% error rate"
 		typing = false
-		$("body").append("<span class='verse_msg'></span><br><a href='/'>Go Home</a> or <a href='#{window.location}'>Type this verse again</a>")
+		$("#typer_engine_container").append("<span class='verse_msg'></span><br><a href='/'>Go Home</a> or <a href='#{window.location}'>Type this verse again</a>")
 		if (!master and incorrectchars == 0) or (master and averageWPM() > master_val)
 			$.ajax "/verse_completions",
 			    type: "POST"
@@ -110,6 +111,13 @@ $ ->
 			$(".word:not(.typed)").first().addClass("typed")
 			if $(".word:not(.typed)").length == 0
 				stop()
+
+		chromeBackFix(e)
+
+	chromeBackFix = (e) ->
+		if e.keyCode == 8
+			e.preventDefault()
+
 
 	setup($(".verse").html())
 		

@@ -2,13 +2,10 @@
   <script>
   	uid = <%= current_user.id %>
   	vid = <%= @verse.id %>
-  	master = true
   	master_val = <%= current_user.mv %>
   </script>
   <%= stylesheet_link_tag    "typer_engine" %>
-  <%= stylesheet_link_tag    "typer_engine_master" %>
   <%= javascript_include_tag "typer_engine" %>
 <% end %>
 
-<div class="ref"><%= @verse.ref %></div>
-<div class="verse"><%= @verse.content %></div>
+<%= render "typer_engine_container", :verse => @verse, :master => true %>

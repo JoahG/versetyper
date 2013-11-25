@@ -7,5 +7,4 @@
   <%= javascript_include_tag "typer_engine" %>
 <% end %>
 
-<div class="ref"><%= @verse.ref %></div>
-<div class="verse"><%= @verse.content %></div>
+<%= render "typer_engine_container", :verse => @verse, :master => false %>
