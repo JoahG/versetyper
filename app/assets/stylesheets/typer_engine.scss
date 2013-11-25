@@ -1,3 +1,7 @@
+p.word:not(.typed) {
+	color: white;
+}
+
 p.word {
   display: inline; 
 }
