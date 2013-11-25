@@ -7,6 +7,8 @@ $ ->
 	charsTyped = null
 	times = null
 	incorrectchars = null
+	if !master?
+		master = false
 	alphabet = ["a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z"," "]
 
 	setup = (w) ->	
@@ -67,7 +69,7 @@ $ ->
 			             wpm: averageWPM()
 			             verse_id: vid
 			             user_id: uid
-			             master: true
+			             master: master_val
 			    success: ->
 			    	if master
 			    		$(".verse_msg").append("<br>You have passed off on this verse.")
