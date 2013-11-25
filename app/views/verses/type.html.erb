@@ -3,6 +3,8 @@
   	uid = <%= current_user.id %>
   	vid = <%= @verse.id %>
   </script>	
+  <%= stylesheet_link_tag    "typer_engine" %>
+  <%= javascript_include_tag "typer_engine" %>
 <% end %>
 
 <div class="ref"><%= @verse.ref %></div>
